@@ -1,51 +1,13 @@
+<!doctype html>
 <html>
 <head>
-  <!-- Load CSS files. -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.css">
-
-  <script src="require.js"></script>
-  <script>
-    require.config({
-      packages: [{
-        name: 'froala-editor',
-        main: 'js/froala_editor.min'
-      }],
-      paths: {
-        // Change this to your server if you do not wish to use our CDN.
-        'froala-editor': 'https://cdn.jsdelivr.net/npm/froala-editor@latest'
-      }
-    });
-  </script>
-
-  <style>
-    body {
-      text-align: center;
-    }
-    div#editor {
-      width: 81%;
-      margin: auto;
-      text-align: left;
-    }
-    .ss {
-      background-color: red;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
-  <div id="editor">
-    <div id='edit' style='margin-top:30px;'>
-    </div>
-  </div>
-
-  <script>
-    require([
-      'froala-editor',
-      'froala-editor/js/plugins/align.min'
-    ], function(FroalaEditor) {
-      new FroalaEditor('#edit')
-    });
-  </script>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
 </body>
-
 </html>
